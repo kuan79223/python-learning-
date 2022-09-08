@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+int main(){
+	int num;
+	struct movie
+	{
+		char name[10];
+		int code;
+	}mv[3] = {{"黑寡婦",1},{"蜘蛛人",2},{"超人",3}};
+	
+	cout << "請輸入電影代碼1~3" << endl; 
+	cin >> num;
+	
+	if( num > 0 && num < 4)
+	{
+		if(num == 1 )
+    {
+      printf("你選擇了%s",mv[0]);
+			cout << "片長為: 1.5小時" << endl;
+    }
+		else if (num == 2)
+    {
+      printf("你選擇了%s",mv[1]) ;
+			cout << "片長為: 2小時" << endl; 
+    }
+		else 
+    {
+      printf("你選擇了%s",mv[2]); 
+			cout << "片長為: 3小時" << endl;
+      }
+	} 
+	else 
+	cout <<"敬請期待"; 
+			
+	return 0;
+}
