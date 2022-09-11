@@ -49,23 +49,6 @@ int main() {
 }
 
 
-
-
-#include <iostream>
-using namespace std;
-
-float temperature(int value){
-  return 1.8 * value +32;
-}
-int main() {
-    int celsius;
-    float result;
-    cout <<"輸入攝氏溫度:" ;
-    cin >> celsius;
-    result = temperature(celsius);
-    cout << "    華氏溫度:"<< result;
-  }
-
 **********************泡沫排序法****************************
 #include <iostream>
 #include <time.h>
