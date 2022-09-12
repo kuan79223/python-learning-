@@ -1,0 +1,66 @@
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+class MV{
+	private:
+		string name;
+		float time;
+		string describe;
+  public:
+  MV(string name , float time ,string describe){
+      name = name;
+      time = time;
+      describe = describe;
+    }
+    void show_dd(){
+     printf("%s\n",describe);}
+		void show_n(){
+       printf("%s ",name);}
+		void show_t(){
+       printf("%f小時",time);}
+};
+int main(){
+	MV *a = new MV{"美國隊長",2.5,"I can do this all day."};
+	MV *b = new MV{"鋼鐵人",2,"I'm iron man"};
+	MV *c = new MV{"復仇者聯盟",2,"afafsahasdhh"};
+	
+  MV *d = new MV{"蜘蛛人",2.5,"I can do this all day."};
+	MV *e = new MV{"黑寡婦",2,"I'm iron man"};
+	MV *f = new MV{"雷神索爾",2,"afafsahasdhh"};
+	
+  MV *g = new MV{"驚奇隊長",2.5,"I can do this all day."};
+  MV *h = new MV{"黑豹",2,"I'm iron man"};
+	MV *j = new MV{"浩克",2,"ahasdhh"};
+	
+	MV *hero[3] = {a,b,c};
+	MV *active[3] = {d,e,f};
+	MV *magic[3] = {g,h,j};
+
+	vector< MV** >vec(3);
+  vec[0] =  hero;
+	vec[1] =  active;
+	vec[2] =  magic;  
+	
+	printf("你要看什麼種類的影片?(1)英雄片 (2)動作片 (3)科幻片 \n");
+	int answer1;
+	cin >> answer1;
+	
+  int i=0;
+  printf("此類別選單: ");
+  for(MV* answer2 : vec[answer1]){
+      cout << i; 	 
+      answer2->show_n(); 
+      i++;  
+	}   
+	printf("\n請輸入代碼: ");
+	int answer2;
+	cin >> answer2;
+	
+	printf("你即將收看: \n");
+	vec[answer1][answer2]->show_n();
+	vec[answer1][answer2]->show_t();
+	vec[answer1][answer2]->show_dd();
+  return 0;
+} 
