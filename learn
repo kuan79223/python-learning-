@@ -1,0 +1,84 @@
+************函數******************
+#include <iostream>
+using namespace std;
+
+float temperature(int value){
+  return 1.8 * value +32;
+}
+int main() {
+    int celsius;
+    float result;
+    cout <<"輸入攝氏溫度:" ;
+    cin >> celsius;
+    result = temperature(celsius);
+    cout << "    華氏溫度:"<< result;
+  }
+
+*********亂數與陣列***********
+#include <iostream>
+#include <time.h>
+using namespace std;
+
+int getscore(){
+  return random() % (100 - 50 + 1) + 50;
+}
+int main() {
+  
+  srandom(time(NULL));
+  int num,score;
+  cout << "請輸入學生人數";
+  cin >> num;
+  cout << "請輸入科目數:";
+  cin >> score;
+  //二維陣列  
+  int totals[num];  //總分陣列
+  int stu[num][score]; //學生人數與成績的二維
+  
+  for (int i = 0; i < num ;i++){
+    cout << "第"  << i+1 << "位學生:\t";
+    int total = 0; //設定一個變數放總分    
+    for(int j = 0; j < score ; j++){
+      stu[i][j]=getscore();
+      total += stu[i][j]; //每一次的分數加總在total陣列中
+      cout << stu[i][j] << "\t" ; //輸出學生與成績的二維
+    }
+    totals[i] = total ;   //將總分放進去陣列
+    cout << totals[i] << "\t";  //輸出 
+    cout << endl;
+  }
+}
+
+
+**********************泡沫排序法****************************
+#include <iostream>
+#include <time.h>
+using namespace std;
+
+int getscore(){
+  return random() % (100 - 50 + 1) + 50;
+}
+int main() {
+  
+  srandom(time(NULL));
+  int num,score;
+  cout << "請輸入學生人數";
+  cin >> num;
+  cout << "請輸入科目數:";
+  cin >> score;
+  //二維陣列  
+  int totals[num];  //總分陣列
+  int stu[num][score]; //學生人數與成績的二維
+  
+  for (int i = 0; i < num ;i++){
+    cout << "第"  << i+1 << "位學生:\t";
+    int total = 0; //設定一個變數放總分    
+    for(int j = 0; j < score ; j++){
+      stu[i][j]=getscore();
+      total += stu[i][j]; //每一次的分數加總在total陣列中
+      cout << stu[i][j] << "\t" ; //輸出學生與成績的二維
+    }
+    totals[i] = total ;   //將總分放進去陣列
+    cout << totals[i] << "\t";  //輸出 
+    cout << endl;
+  }
+}
