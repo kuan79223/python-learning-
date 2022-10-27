@@ -1,0 +1,37 @@
+#使用range()產一個範圍的數值list
+#range()不會像list,tuple,set,dictionary先佔用大量記憶體空間
+#語法:range(start, stop, step).
+#如果省略start,只有stop,start預設為0
+#如同slice,產生的值並不包含stop
+#step預設值為1
+i = 0
+sum = 0
+for i in range(1,6):
+    num = int(input('輸入第'+str(i)+'位學生的成績:'))
+    
+    sum += num
+print('全班總成績為:',sum,'分,平均為:',sum/5)
+
+print('=====================')
+sum = 0
+students = 5
+for i in range(students):
+    score = int(input('請輸入第'+ str(i+1) +'位學生的成績:'))
+    sum += score
+
+print("全班總成績為:" + str(sum) + "分,平均分數為" + str(sum/students) + "分")
+
+
+
+#小美是一位教師，請你以while迴圈方式為小美設計
+# 一個輸入成績的程式，如果輸入負數表示成績輸入結束，
+# 在輸入成績結束後,顯示班上總成績及平均成績。
+count , sum = 0 , 0
+while(True):
+    count += 1
+    n = int(input('輸入第'+str(count)+'位學生成績:'))
+    if(n<0):
+        break
+    else:
+        sum += n             #-1結束迴圈,此時count多1需減回
+print('班上總成績',sum,'平均為','%.2f'%(sum/(count-1)))
