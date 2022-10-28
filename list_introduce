@@ -28,3 +28,5 @@ print(list1)
 list1 = [85,60,70] 
 print('小名的國文:',list1[0],'英文:',list1[1],'數學:',list1[2])
 
+
+
