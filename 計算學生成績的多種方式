@@ -13,6 +13,8 @@ for i in range(1,6):
 print('全班總成績為:',sum,'分,平均為:',sum/5)
 
 print('=====================')
+
+
 sum = 0
 students = 5
 for i in range(students):
@@ -26,6 +28,7 @@ print("全班總成績為:" + str(sum) + "分,平均分數為" + str(sum/student
 #小美是一位教師，請你以while迴圈方式為小美設計
 # 一個輸入成績的程式，如果輸入負數表示成績輸入結束，
 # 在輸入成績結束後,顯示班上總成績及平均成績。
+
 count , sum = 0 , 0
 while(True):
     count += 1
@@ -35,7 +38,7 @@ while(True):
     else:
         sum += n             #-1結束迴圈,此時count多1需減回
 print('班上總成績',sum,'平均為','%.2f'%(sum/(count-1)))
-
+print("===============================")
 
 
 nums = 5
@@ -62,6 +65,8 @@ average = total / (person - 1)
 print('本班總分為%d , 平均成績為%d' % (total, average))
 
 print('============================')
+
+
 score = []
 total = inscore = 0
 while (inscore != -1):  #這個while計算學生數量
