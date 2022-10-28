@@ -1,0 +1,30 @@
+#list 內資料用逗號隔開，放置於中括號的範圍內。
+#list_name = [1,2,3 ]
+#list 可以儲存不同類型的值或項目，如數字和字串。
+#list_name = [1, 2, ‘Python’, ‘lists’ ]
+#list 內的資料可以進行增加、更新與移除。
+#可透過.index( )方法取得指定資料的索引。
+
+#使用中括號 [] or list() 建立空的list
+empty = []
+empty = list()
+
+print(list('cat'))
+print(list(range(1,5)))
+a_tuple = ('ready','fire','aim')
+print(list(a_tuple)) 
+birthday = '1/6/1990'
+print(birthday.split('/'))
+
+list1 = ['h','i']
+tuple1 = ('h','i')
+print(list1)
+print(tuple1)
+#tuple1[1]='a' #元組不能做元素的更改
+list1[1]='a'
+print(list1)
+
+#example:
+list1 = [85,60,70] 
+print('小名的國文:',list1[0],'英文:',list1[1],'數學:',list1[2])
+
