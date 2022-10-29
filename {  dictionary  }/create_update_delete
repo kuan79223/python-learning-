@@ -1,0 +1,154 @@
+******************Introduce*******************
+'''可以想像你現在手上有一本電子英漢字典，
+當你輸入英文單字的時候， 
+就可以查得到它的唯一翻譯。
+你所關心的英文單字與翻譯之間有著 一對一 的關係:
+你輸入的英文單字，就叫做 Key
+而得到的翻譯，就叫做 Value
+一個 Dictionary 是一群 Key : Value 配對的集合
+資料結構是由 key:value 所組成。
+key 不能夠重複，否則會被後面的結果蓋過去。
+可輸入 key 找尋您要找出來的值。
+如果輸入的 key 不存在，那就會出現錯誤訊息。'''
+
+signals = {'綠燈':'go','黃燈':'hurry up','紅燈':'stop'}
+print(signals.keys())
+a = signals.values()
+print(a)
+print(list(signals.values()))
+print(list(signals.items()))
+
+#建立字典
+
+codes = {'tw':'Taiwan','jp':'Japan','hk':'Hang Kong'}
+print(codes['tw'])
+
+lol = [['a','b'],['c','d'],['e','f']]
+print(dict(lol))
+
+lot = [('a','b'),('c','d'),('e','f')]
+print(dict(lot))
+
+tol = (['a','b'],['c','d'],['e','f'])
+print(dict(tol))
+
+los = ['ab','cd','ef']
+print(dict(los))
+
+los = ('ab','cd','ef')
+print(dict(los))
+
+
+#複製字典的方法
+save_signals = signals
+signals['blue'] = 'confuse everyone'
+print(save_signals)
+
+original_signals = signals.copy()
+signals['blue'] = 'confuse everyone'
+print(save_signals)
+
+********keys() and values()********
+#key 不能於程式內改變:
+    #可以用數字、字串或者 tuple
+    #不可以使用 list
+#如何找出所有的 key 與 value
+    #可以透過 dict1.keys( ) 這個方法找出所有的 key
+    #可以透過 dict1.values( ) 這個方法找出所有的 value
+dict1 = {'a':300,'b':400,'c':200}
+print(dict1['a'])
+print(dict1.keys())
+print(dict1.values())
+
+#新增與修改
+    #新增一筆資料
+        #請將 key 與 value 儲存至一個變數內
+        #透過 dict.update(新增的資料) 這個方法的方式就可以新增
+#元素可否變更:
+    #以 = 指派方式指派給 key 就可以變更資料
+
+add_dic = {'d':800}
+add_dict = {'e':60,'f':40}
+dict1.update(add_dic)
+print(dict1)
+print(dict1['d'])
+#一次增加多個key,value
+dict1.update(add_dict)
+print(dict1)
+
+
+#沒有key就新增
+nums={1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five'}
+nums[6] = 'six'
+print(nums)
+
+#有key就更新
+nums[6] = 'SIX'
+print(nums)
+
+#example
+'''設計一個投票統計表，
+包含計算各四位歌手3個地區投票數及總得票數，
+最後顯示得票數和得票率(計算至小數2位)'''
+
+if __name__ == '__main__':
+    names = ['阿名','小可','老王','大熊']
+    for index,name in enumerate(names):
+        print('name[{0:d}]:{1:s}'.format(index,name))
+    votes = [[10,20,30],[50,70,80],[45,34,78],[56,74,93]]
+    totalvotes = 0
+    for personvotes in votes:  #用單人票數帶出二維票數 
+        for vote in personvotes:   #再把單人票數一一拆解
+            totalvotes += vote  
+    print('參與投票人數:',totalvotes)
+    data = {}
+    for index,name in enumerate(names):
+        man = {name:votes[index]} #man字典{人名:票數}
+        data.update(man)  #將man字典更新到data字典
+    print(data)
+    '''comprehension 理解上述的迴圈
+    data = {name:votes[index] for index,name in enumerate(names)}
+    print(data)
+    '''
+    #dict.items()以列表返回可遍歷的(鍵, 值) 元組數組。
+    for man in data.items():  #用items()帶出man的每一個keys,values
+        name = man[0]   # 每一個元素為[0_keys,1_values]
+        scores = man[1]
+        personsum = 0
+        print(man)
+        
+        for score in scores:  #用score帶出scores裡的每一筆票數
+            personsum += score  #將一筆票數加總
+        print('{0:s}總票數為:{1:d}'.format(name,personsum))
+        print('{0:s}得票率為:{1:.4f}%\n'.format(name,personsum/totalvotes))
+
+
+
+
+#刪除動作可分刪除資料、清除所有項目與刪除字典三種:
+    #del dict[key] 刪除某一個 key 的資料
+    #dict.clear( ) 清除所有項目
+    #del dict 刪除字典
+dict1 = {'a':100,'b':200,'c':300}
+del dict1['c']
+print(dict1)
+nums = {1: 'one',2: 'two',3: 'three',4: 'four',5: 'five'}
+del nums[1] #直接以項目的方式讀取位置
+print(nums)
+dict1.clear()  
+print(dict1)
+
+del nums
+print('one' in dict1.values())
+#關於 key 的判斷
+#請以 (key in dict1.keys( )) 方式進行判斷
+    #存在傳回 true
+    #不存在傳回 false
+print('c' in dict1)
+
+first = {'a':1,'b':2}
+second = {'b':'apple'}
+first.update(second)
+print(first)
+
+
