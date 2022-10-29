@@ -1,0 +1,41 @@
+【輸入四個月的支出金額後列出最多與最少的支出金額。】
+  請輸入第1個月的支出金額:5000
+  請輸入第2個月的支出金額:4000
+  請輸入第3個月的支出金額:3500
+  請輸入第4個月的支出金額:7000
+  支出最多的金額為:7000
+  支出最少的金額為:3500
+  支出的總額為:19500
+  支出金額由小到大排序為:[3500, 4000, 5000, 7000]
+
+
+def pay():
+  list1 = []
+  for i in range(4):
+    print('輸入第{0:d}個月的資出金額:'.format(i+1))
+    list1.append(int(input()))
+  print('支出最多金額為:', max(list1))
+  print('支出最少金額為:', min(list1))
+  print('支出的總額為:', sum(list1))
+  print('支出金額由小到大排序為:{}'.format(sorted(list1,reverse=False)))
+  
+
+pay()
+
+
+
+#while
+def pay():
+  list1 = []
+  i , n = 0 , 0
+  while n != -1:
+    i += 1
+    n = int(input('輸入第{0:d}個月的資出金額:'.format(i)))
+    list1.append(n)
+  list1.pop()
+  print('支出最多金額為:', max(list1))
+  print('支出最少金額為:', min(list1))
+  print('支出的總額為:', sum(list1))
+  print('支出金額由小到大排序為:{}'.format(sorted(list1,reverse=False)))
+
+pay()
