@@ -28,15 +28,18 @@
 
 ![image](https://user-images.githubusercontent.com/112489587/198813084-01d9bd3f-a5e7-48ad-a493-63e4dd8c1da4.png)
 
+# keys() and values()
 
-********keys() and values()********
+    ● key 不能於程式內改變:   
+        ○ 可以用數字、字串或者 tuple
+        ○ 不可以使用 list
+    ● 如何找出所有的 key 與 value:    
+        ○ 可以透過 dict1.keys( ) 這個方法找出所有的 key
+        ○ 可以透過 dict1.values( ) 這個方法找出所有的 value
 
-#key 不能於程式內改變:
-    可以用數字、字串或者 tuple
-    不可以使用 list
-#如何找出所有的 key 與 value
-    可以透過 dict1.keys( ) 這個方法找出所有的 key
-    可以透過 dict1.values( ) 這個方法找出所有的 value
+![Uploading image.png…]()
+
+
 dict1 = {'a':300,'b':400,'c':200}
 print(dict1['a'])
 print(dict1.keys())
