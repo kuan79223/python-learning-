@@ -1,4 +1,4 @@
-******************Introduce*******************
+# Introduce
 '''可以想像你現在手上有一本電子英漢字典，
 當你輸入英文單字的時候， 
 就可以查得到它的唯一翻譯。
@@ -11,42 +11,24 @@ key 不能夠重複，否則會被後面的結果蓋過去。
 可輸入 key 找尋您要找出來的值。
 如果輸入的 key 不存在，那就會出現錯誤訊息。'''
 
-signals = {'綠燈':'go','黃燈':'hurry up','紅燈':'stop'}
-print(signals.keys())    
-a = signals.values()
-print(a)
-print(list(signals.values()))
-print(list(signals.items()))
+![image](https://user-images.githubusercontent.com/112489587/198812667-9e641c30-35d3-48d2-a71d-b249e9d5e0a6.png)
 
-#建立字典
+![image](https://user-images.githubusercontent.com/112489587/198812675-274d5433-53c2-4f48-90ba-077ccfb2b054.png)
 
-codes = {'tw':'Taiwan','jp':'Japan','hk':'Hang Kong'}
-print(codes['tw'])
+# 建立字典
 
-lol = [['a','b'],['c','d'],['e','f']]
-print(dict(lol))
+![image](https://user-images.githubusercontent.com/112489587/198812912-f6cec82c-2af5-4197-af6c-b3f5763ab003.png)
 
-lot = [('a','b'),('c','d'),('e','f')]
-print(dict(lot))
-
-tol = (['a','b'],['c','d'],['e','f'])
-print(dict(tol))
-
-los = ['ab','cd','ef']
-print(dict(los))
-
-los = ('ab','cd','ef')
-print(dict(los))
+![image](https://user-images.githubusercontent.com/112489587/198812920-d2341b5d-bd5f-4420-8cd4-9076cec19289.png)
 
 
-#複製字典的方法
-save_signals = signals
-signals['blue'] = 'confuse everyone'
-print(save_signals)
 
-original_signals = signals.copy()
-signals['blue'] = 'confuse everyone'
-print(save_signals)
+# 複製字典的方法
+
+![image](https://user-images.githubusercontent.com/112489587/198813071-6e23517e-ff1e-4f68-9eb2-0b5a8f02f766.png)
+
+![image](https://user-images.githubusercontent.com/112489587/198813084-01d9bd3f-a5e7-48ad-a493-63e4dd8c1da4.png)
+
 
 ********keys() and values()********
 
