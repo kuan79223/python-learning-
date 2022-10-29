@@ -1,0 +1,80 @@
+#語法:字串.replace(old, new[, max])
+#replace方法 可以將指定的字串進行更換:
+#字串.replace(舊字串, 新字串)
+#replace方法 可以指定您要第幾個位置後不進行更換:
+#字串.replace(舊字串, 新字串,替換不可以超過幾次)
+#位置編號由 0 開始
+name = 'honey'
+print(name.replace('h','m'))
+print('m'+name[1:])
+
+str1 = '''
+This is Python, That is Java;
+This is SQLite, That is MySQL'''
+print(str1.replace('Th','$',2))
+
+*********************************************
+
+
+#字元依照順序排序:
+#第一個字索引編號為 0，第二個字索引編號為 1。
+#最後一個字索引編號為 -1，倒數第二個字索引編號為 -2。
+
+letters = 'abcdefghijklmnopqrstuvwxyz'
+print(len(letters))
+#[ start : end : step ]
+print(letters[:])     #全部元素
+print(letters[-3:])
+print(letters[18:-3])
+print(letters[-6:-2]) #-5,-4,-3
+print(letters[::7])   #印出字串每7個間隔的元素值
+print(letters[4:20:3])#印出元素4到20每3個間隔的值
+print(letters[19::4]) #印出元素19之後間隔4的元素值
+print(letters[:21:5]) #印出元素21之前的每間隔5的元素
+print(letters[::-1])  #印出-1(包括)之前的元素值_可視為反向印出字串
+empty = ''
+print(len(empty))
+
+#[n]
+#[ ]內可加入一個整數 n。
+#代表由字串中取出固定索引欄位 n 的字元。
+#由左向右存取，編號由 0 開始遞增。
+#由右向左存取，編號由 -1 開始遞減。
+
+print(letters[0],letters[-1],letters[25])
+print('===========')
+#[n : m]
+#在一個範圍內找資料
+#n 與 m 均是一個整數
+#n 代表起始位置，第一個為 0。
+#m 是結束位置，不包含這個位置。
+
+string = 'Hello World'
+print(string[0],string[2],string[-1])
+print(string[2:])
+print(string[:3])
+print(string[1:4])
+
+****************************************
+str = "hello world"
+print(str[0])
+print(str[2])
+print(str[-1])
+print(str[-2])
+print(str[2:])#印出索引2之後
+print(str[:3])#印出索引3之前
+print(str[1:4])#印出索引123
+
+name = 'Henny'
+print(name.replace('H','P'))
+print('P'+name[1:])
+
+str1 = 'this is python,that is java;this is  SQLite,that is MYSQL'
+print()
+print('is替換為 - :'+str1.replace('is','-'))
+print()
+
+print('原本的字串:',str1)
+print()                    #取代的次數不超過2個
+print('加上參數值2:'+str1.replace('is','-',2))
+
