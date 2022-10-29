@@ -37,66 +37,55 @@
         ○ 可以透過 dict1.keys( ) 這個方法找出所有的 key
         ○ 可以透過 dict1.values( ) 這個方法找出所有的 value
 
-![Uploading image.png…]()
+![image](https://user-images.githubusercontent.com/112489587/198817808-14cfaf8a-e61b-443f-a2c8-f7417d653d1f.png)
+
+![image](https://user-images.githubusercontent.com/112489587/198817814-0da87e88-0586-42e4-bbfa-9da5d774c410.png)
 
 
-dict1 = {'a':300,'b':400,'c':200}
-print(dict1['a'])
-print(dict1.keys())
-print(dict1.values())
+# 新增與修改
+    ● 新增一筆資料
+        ○ 請將 key 與 value 儲存至一個變數內
+        ○ 透過 dict.update(新增的資料) 這個方法的方式就可以新增
+    ● 元素可否變更:
+        ○ 以 = 指派方式指派給 key 就可以變更資料
+![image](https://user-images.githubusercontent.com/112489587/198817986-b026c565-34c0-4844-8432-d2b0b2393893.png)
 
-#新增與修改
-    #新增一筆資料
-        #請將 key 與 value 儲存至一個變數內
-        #透過 dict.update(新增的資料) 這個方法的方式就可以新增
-#元素可否變更:
-    #以 = 指派方式指派給 key 就可以變更資料
+    一次增加多個key,value
+![image](https://user-images.githubusercontent.com/112489587/198818046-2d5ef8d9-0dd5-4548-a9ef-c0b5e8c9aa45.png)
 
-add_dic = {'d':800}
-add_dict = {'e':60,'f':40}
-dict1.update(add_dic)
-print(dict1)
-print(dict1['d'])
-#一次增加多個key,value
-dict1.update(add_dict)
-print(dict1)
+![image](https://user-images.githubusercontent.com/112489587/198818055-073df421-6eaa-494c-9526-f44f8003d73d.png)
 
 
-#沒有key就新增
-nums={1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five'}
-nums[6] = 'six'
-print(nums)
+    沒有key就新增
+![image](https://user-images.githubusercontent.com/112489587/198818128-ee6fe5d0-c4a8-403a-b47e-7ccb4fa777d4.png)
 
-#有key就更新
-nums[6] = 'SIX'
-print(nums)
+![image](https://user-images.githubusercontent.com/112489587/198818147-17ca2e6c-2e4d-4788-b052-da3b35065d64.png)
+
+    有key就更新
+![image](https://user-images.githubusercontent.com/112489587/198818233-c85ff81e-2103-4ef7-a5d5-4cadc0a649e0.png)
+
+![image](https://user-images.githubusercontent.com/112489587/198818255-79982e80-120d-4fa5-bcf4-31b5b1378c76.png)
 
 
-#刪除動作可分【刪除資料】、【清除所有項目】與【刪除字典】三種:
+# 刪除動作可分【刪除資料】、【清除所有項目】與【刪除字典】三種:
     del dict[key] 刪除某一個 key 的資料
     dict.clear( ) 清除所有項目
     del dict 刪除字典
 
-dict1 = {'a':100,'b':200,'c':300}
-del dict1['c']
-print(dict1)
-nums = {1: 'one',2: 'two',3: 'three',4: 'four',5: 'five'}
-del nums[1] #直接以項目的方式讀取位置
-print(nums)
-dict1.clear()  
-print(dict1)
+![image](https://user-images.githubusercontent.com/112489587/198818385-8bcc77e5-e1be-42b5-8fb6-11c56ec0ed5c.png)
 
-del nums
-print('one' in dict1.values())
-#關於 key 的判斷
-#請以 (key in dict1.keys( )) 方式進行判斷
-    #存在傳回 true
-    #不存在傳回 false
-print('c' in dict1)
+![image](https://user-images.githubusercontent.com/112489587/198818397-4c7992ad-c97f-404d-aec1-385b20f550ac.png)
 
-first = {'a':1,'b':2}
-second = {'b':'apple'}
-first.update(second)
-print(first)
+
+# 關於 key 的判斷
+    請以 (key in dict1.keys( )) 方式進行判斷
+        存在傳回 true
+        不存在傳回 false
+![image](https://user-images.githubusercontent.com/112489587/198818440-e0e647cb-3b51-4712-bd79-05e719756dbb.png)
+
+![image](https://user-images.githubusercontent.com/112489587/198818444-ef69165f-500f-4cab-8312-df15eb76b2d0.png)
+
+
+
 
 
