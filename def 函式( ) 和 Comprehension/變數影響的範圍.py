@@ -53,18 +53,4 @@ f_sum()
 print(a)
 
 
-#example
-#輸入四個月的支出金額後列出最多與最少的支出金額。
 
-def pay():
-  list1 = []
-  for i in range(4):
-    print('輸入第{0:d}個月的資出金額:'.format(i+1))
-    list1.append(int(input()))
-  print('支出最多金額為:', max(list1))
-  print('支出最少金額為:', min(list1))
-  print('支出的總額為:', sum(list1))
-  print('支出金額由小到大排序為:{}'.format(sorted(list1,reverse=False)))
-  
-
-pay()
