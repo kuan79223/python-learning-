@@ -24,3 +24,20 @@
 * __init__方法不是一定要實作的  
   name屬性在Person定義的類別內的存取，
   必需使用self.name,但當建立真實的實體後必需使用參考名稱.name 
+
+
+### 以字典的方式印出類別方法的初始化.ˍˍdictˍˍ
+![image](https://user-images.githubusercontent.com/112489587/200110210-971cec90-7598-4c84-ad93-666682cd30ac.png)
+out >> 
+![image](https://user-images.githubusercontent.com/112489587/200110235-a5512ec7-d61e-496e-bbb7-57841c55e31c.png)
+
+#### 在主程式初始化類別方法 
+![image](https://user-images.githubusercontent.com/112489587/200110283-65bdb1e0-3e00-4341-b33d-e8639a5c1cfe.png)
+
+#### 解開dictionary成為引數名稱=value,引數名稱=value 
+
+![image](https://user-images.githubusercontent.com/112489587/200110421-2b651463-7524-4f58-afb3-8fa0920b3eda.png)
+
+
+
+    
