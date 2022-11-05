@@ -75,3 +75,9 @@ out >> ![image](https://user-images.githubusercontent.com/112489587/200099736-96
     out >>  
 ![image](https://user-images.githubusercontent.com/112489587/200101114-4a1dbd44-649e-4144-9777-9c9842cd5c81.png)
 
+## 目前主程式搜尋模組的路徑(Module Search Path)
+![image](https://user-images.githubusercontent.com/112489587/200101233-56958478-f746-4f7c-b443-f1b125153f96.png)
+
+    out >> 
+![image](https://user-images.githubusercontent.com/112489587/200101246-14f6037d-681f-419c-b2c5-258fcd52336d.png)
+
