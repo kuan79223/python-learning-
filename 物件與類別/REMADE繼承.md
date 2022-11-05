@@ -28,7 +28,16 @@ out >> ![image](https://user-images.githubusercontent.com/112489587/200109585-b5
 out >> ![image](https://user-images.githubusercontent.com/112489587/200111012-85dcff9a-f9e8-416f-a392-dde286f1127f.png)
 
 ### setter 和 getter 操作私有屬性
-    
+    增加property getter 和 setter      
+![image](https://user-images.githubusercontent.com/112489587/200114059-89f8b506-6309-4ae4-af21-3c544d7a1e3f.png)
+
+out >>  
+![image](https://user-images.githubusercontent.com/112489587/200114103-a10fc763-759d-4f50-a237-90bbe9f7bd6e.png)
+
+
+
+
+### 範例
     這樣的方式也會讓使用者輕易把屬性替換掉
 ![image](https://user-images.githubusercontent.com/112489587/200111903-60dab0be-7c55-4c9c-93a5-80dbd7a05811.png)
 
@@ -37,6 +46,7 @@ out >> ![image](https://user-images.githubusercontent.com/112489587/200111012-85
     這樣雖然屬性變安全了，但是卻沒辦法取出
     
 ### 加上 get 和 set 方法來操作私有屬性：    
+
 ![image](https://user-images.githubusercontent.com/112489587/200112013-464c39bc-98ca-413a-8369-59b78de44ddd.png)
 
 ### Property
