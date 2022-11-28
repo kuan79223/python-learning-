@@ -162,12 +162,12 @@
 
             filename： log檔名
             when：是一個字符串，用於描述滾動週期的基本單位，字符串的值及意義如下：
-            “S”: Seconds
-            “M”: Minutes
-            “H”: Hours
-            “D”: Days
-            “W”: Week day (0 = Monday)
-            “midnight”: Roll over at midnight
+            S: Seconds
+            M: Minutes
+            H: Hours
+            D: Days
+            W: Week day (0 = Monday)
+            midnight: Roll over at midnight
             interval: 滾動週期，單位由 when 指定，比如：when='D',interval=1，表示每天產生一個日誌文件；
             backupCount: 表示日誌文件的保留個數；
 
