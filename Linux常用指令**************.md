@@ -1,10 +1,10 @@
 ## 安裝 Ubuntu-64bit  虛擬環境
     
 依照下列步驟,可以調整虛擬電腦的大小    
-* 在 Terminal 輸入兩個指令  
-1.    sudo apt update
-2.    sudo apt install -y build-essential linux-headers-$(uname -r)
-3.    裝置 >> 插入Guest Additions 映像
+* 在 Terminal 輸入兩個指令 
+1.    裝置 >> 插入Guest Additions 映像
+2.    sudo apt update
+3.    sudo apt install -y build-essential linux-headers-$(uname -r)
 4.    點選光碟進入 資料夾 >> 右鍵打開 op in Terminal >> 輸入 ls >> 可以看到 AUTORUN.INF 輸入 ./autorun.sh
 5.    將作業系統全部關掉 >> 右鍵點選右上角的電池 >> Power Off / Log Out>> Restart... 重新啟動
 
