@@ -11,6 +11,9 @@
 參考文獻: https://www.google.com/search?q=ubuntu+Guest+Additions+CD&sxsrf=ALiCzsZ3G4SseMP7XOwj-G7vcCMY1PqHRQ:1671201126122&source=lnt&tbs=qdr:y&sa=X&ved=2ahUKEwibuOGrrf77AhVkpVYBHafCBNkQpwV6BAgBEB8&biw=1538&bih=704&dpr=1.25#fpstate=ive&vld=cid:63749e53,vid:zdkl16oAS1k
 
 
+## 利用 Terminal 下載安裝 google chrome
+* 下載 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+* sudo apt install ./google-chrome-stable_current_amd64.deb
 
 # Linux 常用指令
 
