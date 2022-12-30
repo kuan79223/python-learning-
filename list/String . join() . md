@@ -1,0 +1,22 @@
+## Python join()函數用法 
+
+    sep 分隔符，可以為空:要連結的元素 str, list, tuple, dict 都可以用 sep做為分隔符，
+    將想要轉換字符的所有元素合併轉成一個新的字串
+    返回的參數值就會是一個以分隔符號sep連接個元素的字符串
+    
+![image](https://user-images.githubusercontent.com/112489587/201466228-f818f62a-4fdb-4d3f-a227-1246cc769d35.png)  
+out >>  
+![image](https://user-images.githubusercontent.com/112489587/201466274-d696d141-b405-4c84-bb1d-9fee41107e2c.png)
+
+
+### (os.path.join) 取得資料夾絕對路徑    
+
+![image](https://user-images.githubusercontent.com/112489587/201467124-4bef86e8-4ff5-4f00-a2b0-c021cad8a2fd.png)    
+
+### Python join() if   
+![image](https://user-images.githubusercontent.com/112489587/201468583-a4793d47-5670-4b62-9487-c324395f53c3.png)    
+
+out >>  
+![image](https://user-images.githubusercontent.com/112489587/201468658-4bd6e843-d5c1-4bf4-b5dc-77b10d5c373f.png)    
+
+
