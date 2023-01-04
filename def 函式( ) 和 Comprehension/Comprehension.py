@@ -2,7 +2,7 @@
 #語法:[ expression for item in iterable if condition ]
 #語法:[expression for item1 in iterable for item2 in iterable]
 
-#使用appen()方法建立
+#使用append()方法建立
 numlist = []
 numlist.append(1)
 numlist.append(2)
@@ -90,3 +90,7 @@ for number in numthing:
 #generator只可以使用一次,使用完後就被消滅.
 try_again = list(numthing)
 print(try_again)
+
+path_list = [os.path.basename(x) for x in golb.golb(os.path.join(target_dir, folder, '*.png))] 
+                                                                 
+                                                                 
