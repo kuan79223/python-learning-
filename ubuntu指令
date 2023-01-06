@@ -1,4 +1,0 @@
-
-sudo apt update:    更新軟件包
-sudo apt 軟件名稱:   安裝軟件 
-sudo apt remove 軟件名稱: 刪除軟件
