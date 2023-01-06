@@ -1,4 +1,6 @@
-#一個decorator是一個function, 這個function有一個參數，可以利用參數傳入其它function,然後傳出其它修改過的function
+修改已經有的function功能，但不需要更改到裏面原本的內容程式碼
+
+一個decorator是一個function, 這個function有一個參數，可以利用參數傳入其它function,然後傳出其它修改過的function
 
 def document(fc):
   #'''內部的函數'''
