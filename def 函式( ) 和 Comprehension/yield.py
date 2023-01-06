@@ -9,20 +9,24 @@ generators只可以使用一次
 '''
 
 print(sum(range(1,101)))
-#利用函式創建一個迴圈
 
+#利用函式創建一個迴圈
 def my_range(first = 0, last = 10, step = 1):
   
   number = first
   
   while number < last:
-    yield number #透過yield建立generator的元素
+    yield number # 透過yield建立generator的元素
     number += step
 
+  return
+
+
+
 print(my_range)
+#<function my_range at 0x7ff4dc42a3a0>
 
 ranger = my_range(1,5)
 print(ranger)
+#<generator object my_range at 0x7ff4dc258900>
 
-for x in ranger:
-  print(x)
