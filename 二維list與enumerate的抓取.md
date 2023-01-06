@@ -27,12 +27,11 @@ All_3C = [notebook, phone, home]
 
        students = [[60,70,80],[67,54,89]]
        
-       #enumerate(sequence, [start=0])
-       
        for index,student in enumerate(students):
            print(index,student)
            for i,score in enumerate(student):
                print('第{0:d}位學生第{1:d}科成績為{2:d}'.format(index+1,i+1,score))
 
 
+![image](https://user-images.githubusercontent.com/112489587/210926107-f08e913c-f004-484f-970a-1ffe4e035aa9.png)
 
